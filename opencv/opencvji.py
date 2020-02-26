@@ -3,6 +3,11 @@ import cv2
 import jetson.inference
 import jetson.utils
 
+#
+# Requires that https://github.com/dusty-nv/jetson-inference be installed.
+#
+#
+
 # setup the network we are using
 net = jetson.inference.detectNet("ssd-mobilenet-v2", threshold=0.5)
 # start our camera.  USB came may be 0 or 1
